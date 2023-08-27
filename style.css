@@ -87,4 +87,38 @@ nav {
     border: 1px solid var(--clr-primary);
     border-radius: 5px;
     background-color: var(--clr-primary);
+
+    cursor: pointer;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px 25px;
+}
+
+.button {
+    border-radius: 2px;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+}
+
+.sign-up {
+    color: var(--clr-primary);
+}
+
+.sign-in {
+    background-color: var(--clr-primary);
+    color: var(--clr-primary-white);
+    transition: 0.4s;
+}
+
+nav img {
+    width: 25px;
 }
