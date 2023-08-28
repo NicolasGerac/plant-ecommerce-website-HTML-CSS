@@ -8,47 +8,61 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="header__nav">
                 <p id="logo">P</p>
-                <ul>
-                    <li>
+                <ul class="header__nav__menu">
+                    <li class="header__nav__menu__links">
                         <a href=""
                             ><img
                                 src="./asset/svg/search.svg"
                                 alt="Bouton recherche"
+                                class="header__nav__menu__links__link"
                         /></a>
                     </li>
-                    <li>
+                    <li class="header__nav__menu__links">
                         <a href=""
                             ><img
                                 src="./asset/svg/shop.svg"
                                 alt="Bouton panier"
+                                class="header__nav__menu__links__link"
                         /></a>
                     </li>
-                    <li><a href="" class="button sign-up">Connexion</a></li>
-                    <li><a href="" class="button sign-in">Inscription</a></li>
+                    <li class="header__nav__menu__links">
+                        <a
+                            href=""
+                            class="header__nav__menu__links__link link__button link__button--signUp"
+                            >Connexion</a
+                        >
+                    </li>
+                    <li class="header__nav__menu__links">
+                        <a
+                            href=""
+                            class="header__nav__menu__links__link link__button link__button--signIn"
+                            >Inscription</a
+                        >
+                    </li>
                 </ul>
             </nav>
 
-            <section id="hero-section">
+            <section id="header__hero">
                 <img
                     src="./asset/img/header-plant.jpg"
                     alt="Image de plante"
-                    id="header-banner"
+                    id="header__hero__img"
                 />
 
-                <div id="right-hero-section">
-                    <div class="right-hero-section-text">
-                        <h1>Verdissez votre vie.</h1>
-                        <p>
+                <div class="header__hero__rightSection">
+                    <div class="header__hero__rightSection__topSection">
+                        <h1 class="hero__title">Verdissez votre vie.</h1>
+                        <p class="hero__tagline">
                             Plongez dans l'univers luxuriant de PurePlants, où
                             chaque feuille raconte une histoire de vie. Notre
                             passion pour les plantes vertes nous pousse à vous
                             offrir une sélection variée, de la classique
                             Monstera à l'élégante Fougère de Boston.
                         </p>
-                        <p>
-                            <span id="hero-banner-img-name"
+                        <p class="hero__tagline">
+                            <span id="header__hero__img--plantName"
                                 >Begonia Masoniana</span
                             >
                             : également connue sous le nom de "Begonia Iron
@@ -59,20 +73,26 @@
                         </p>
                     </div>
 
-                    <div id="plant-hero-selection">
-                        <div class="plant-hero-button previous-plant">
-                            <p class="arrow-and-text">
+                    <div class="header__hero__rightSection__bottomSection">
+                        <div
+                            class="header__hero__img--plantButtonSelection plantButtonSelection--previousPlant"
+                        >
+                            <p class="plantButtonSelection__textAndArrow">
                                 <img src="./asset/svg/left-arrow.svg" alt="" />
                                 Précédent
                             </p>
-                            <p class="plant-button-name">Alocasia Odora</p>
+                            <p class="plantButtonSelection__plantName">
+                                Alocasia Odora
+                            </p>
                         </div>
-                        <div class="plant-hero-button next-plant">
-                            <p class="arrow-and-text">
+                        <div
+                            class="header__hero__img--plantButtonSelection plantButtonSelection--nextPlant"
+                        >
+                            <p class="plantButtonSelection__textAndArrow">
                                 Suivant
                                 <img src="./asset/svg/right-arrow.svg" alt="" />
                             </p>
-                            <p class="plant-button-name">
+                            <p class="plantButtonSelection__plantName">
                                 Alocasia Dragon Scale
                             </p>
                         </div>

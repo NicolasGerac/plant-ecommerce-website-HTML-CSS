@@ -66,11 +66,13 @@ img {
 /* END OF CSS VARIABLES */
 
 /* HEADER STYLE */
-/* Navigation */
-nav {
+/* .header__navigation */
+#header__nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    width: 100%;
+    position: absolute;
 }
 
 #logo {
@@ -92,51 +94,46 @@ nav {
     cursor: pointer;
 }
 
-nav {
-    width: 100%;
-    position: absolute;
-}
-
-nav ul {
+.header__nav__menu {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-nav ul li a {
+.header__nav__menu__links__link {
     text-decoration: none;
     padding: 5px 25px;
 }
 
-.button {
+.header__nav__menu__links__link.link__button {
     border-radius: 2px;
     font-size: var(--fs-400);
     font-weight: var(--fw-regular);
 }
 
-.sign-up {
+.link__button--signUp {
     color: var(--clr-primary);
 }
 
-.sign-in {
+.link__button--signIn {
     background-color: var(--clr-primary);
     color: var(--clr-primary-white);
     transition: 0.4s;
 }
 
-nav img {
+#header__nav img {
     width: 25px;
 }
-/* End of navigation */
+/* End of .header__navigation */
 
 /* Left hero section*/
-#hero-section {
+#header__hero {
     display: flex;
     height: 1000px;
 }
 
-#header-banner {
+#header__hero__img {
     width: 50%;
     height: 100%;
     object-fit: cover;
@@ -144,7 +141,7 @@ nav img {
 /* end of left hero section */
 
 /* right hero section */
-#right-hero-section {
+.header__hero__rightSection {
     width: 50%;
     height: 100%;
     display: flex;
@@ -152,17 +149,17 @@ nav img {
 }
 
 /* Right hero section text */
-.right-hero-section-text {
+.header__hero__rightSection__topSection {
     padding: 200px 100px 0 100px;
 }
 
-.right-hero-section-text h1 {
+.hero__title {
     font-size: var(--fs-900);
     font-weight: var(--fw-black);
     color: var(--clr-primary);
 }
 
-.right-hero-section-text p {
+.hero__tagline {
     margin-top: 20px;
     margin-left: 15px;
 
@@ -171,21 +168,21 @@ nav img {
     color: var(--clr-primary-black);
 }
 
-#hero-banner-img-name {
+#header__hero__img--plantName {
     font-size: var(--fs-600);
     font-weight: var(--fw-regular);
     color: var(--clr-primary);
 }
 /* End of hero section text */
 
-#plant-hero-selection {
+.header__hero__rightSection__bottomSection {
     height: 50%;
 
     display: flex;
     align-items: flex-end;
 }
 /* Buttons styles */
-.plant-hero-button {
+.header__hero__img--plantButtonSelection {
     width: 50%;
     height: 180px;
     display: flex;
@@ -194,11 +191,11 @@ nav img {
     justify-content: center;
 }
 
-.plant-hero-button img {
+.header__hero__img--plantButtonSelection img {
     width: 100px;
 }
 
-.plant-hero-button .arrow-and-text {
+.plantButtonSelection__textAndArrow {
     display: flex;
     align-items: center;
     font-size: var(--fs-600);
@@ -207,17 +204,17 @@ nav img {
     color: var(--clr-secondary-grey);
 }
 
-.plant-hero-button .plant-button-name {
+.plantButtonSelection__plantName {
     margin-left: 30px;
     font-size: var(--fs-800);
     font-weight: var(--fw-regular);
 }
 
-.previous-plant {
+.plantButtonSelection--previousPlant {
     color: var(--clr-primary);
 }
 
-.next-plant {
+.plantButtonSelection--nextPlant {
     background-color: var(--clr-primary);
     color: var(--clr-primary-white);
 }
