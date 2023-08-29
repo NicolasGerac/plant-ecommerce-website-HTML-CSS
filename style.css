@@ -157,6 +157,7 @@ img {
     font-size: var(--fs-900);
     font-weight: var(--fw-black);
     color: var(--clr-primary);
+    letter-spacing: 2px;
 }
 
 .hero__tagline {
@@ -233,6 +234,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 150px;
+    letter-spacing: 2px;
 }
 
 .main__ourAdvantages__advantage {
@@ -262,3 +264,77 @@ main {
     width: 100px;
 }
 /* End of ourAdvantage Section */
+/* FeaturedPlant Section */
+/* Top division */
+#main__featuredPlant {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.main__featuredPlant__division {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 4px solid var(--clr-primary-grey);
+    border-radius: 2px;
+}
+
+.featuredPlant__title {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+}
+
+#featuredPlant__select {
+    width: 200px;
+    padding-left: 10px;
+    font-size: var(--fs-400);
+    border: 3px solid var(--clr-primary-grey);
+}
+/* End of Top division */
+/* Bottom division */
+.main__featuredPlant__plantShowcase {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.plantShowcase__card {
+    width: 320px;
+    height: 370px;
+}
+
+.card__imgDivision {
+    width: 100%;
+    height: 300px;
+    background-color: var(--clr-primary-grey);
+    overflow: hidden;
+    border-radius: 2px;
+}
+.plantShowcase__card__img {
+    width: 600px;
+    object-fit: cover;
+    height: auto;
+}
+.card__txtDivision {
+    height: 70px;
+    border: 4px solid var(--clr-primary-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--clr-primary-white);
+}
+.card__plantName {
+    letter-spacing: 1px;
+    font-size: var(--fs-600);
+    font-weight: var(--fw-regular);
+}
+
+.card__plantPrice {
+    letter-spacing: 0.5px;
+    font-size: var(--fs-400);
+}
+
+.txtDivision__likeSvg {
+    width: 40px;
+}
