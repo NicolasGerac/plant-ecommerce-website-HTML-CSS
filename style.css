@@ -123,7 +123,7 @@ img {
 }
 
 #header__nav img {
-    width: 25px;
+    width: 40px;
 }
 /* End of .header__navigation */
 
@@ -221,3 +221,44 @@ img {
 /* End of Buttons styles */
 /* End of right button section */
 /* END OF HEADER */
+/* MAIN */
+/* OurAdvantages Section */
+main {
+    width: 100%;
+    padding: 0 20px;
+}
+
+#main__ourAdvantages {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.main__ourAdvantages__advantage {
+    width: 450px;
+
+    padding: 10px;
+    border: 4px solid var(--clr-primary-grey);
+    border-radius: 2px;
+}
+
+.advantage__text {
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-800);
+    font-weight: var(--fw-regular);
+    color: var(--clr-primary);
+}
+
+.advantage__description {
+    margin-top: 15px;
+    font-size: var(--fs-500);
+    color: var(--clr-secondary-grey);
+}
+
+.advantage__svg {
+    margin-right: 20px;
+    width: 100px;
+}
+/* End of ourAdvantage Section */
