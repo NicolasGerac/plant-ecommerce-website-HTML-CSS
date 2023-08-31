@@ -75,7 +75,7 @@ img {
     position: absolute;
 }
 
-#logo {
+.logo {
     width: calc(var(--fs-700) + 5px);
     height: calc(var(--fs-700) + 5px);
 
@@ -337,4 +337,43 @@ main {
 
 .txtDivision__likeSvg {
     width: 40px;
+}
+/*End Bottom division */
+/* End FeaturedPlant Section */
+
+/* FOOTER */
+footer {
+    margin-top: 100px;
+    background-color: #156963;
+    height: 400px;
+    padding: 20px 20px;
+}
+
+.footer__top__logo {
+    display: flex;
+}
+
+.footer__top__logo .logo {
+    background-color: var(--clr-primary-white);
+    color: var(--clr-primary);
+}
+
+.logo__name {
+    color: var(--clr-primary-white);
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+    margin-left: 5px;
+    letter-spacing: 2px;
+}
+
+.footer__mid {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__mid p {
+    color: var(--clr-primary-white);
+    font-size: var(--fs-500);
 }
